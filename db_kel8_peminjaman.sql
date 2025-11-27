@@ -1,7 +1,6 @@
 -- =============================================
 -- DATABASE: sistem_peminjaman_olahraga
--- AUTHOR: [Nama Kamu]
--- CREATED: 2024
+-- CREATED: 2025-11-25
 -- =============================================
 
 -- Buat database
