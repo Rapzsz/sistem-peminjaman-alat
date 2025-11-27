@@ -30,6 +30,7 @@ CREATE TABLE peminjam (
 -- =============================================
 -- TABEL: peminjaman
 -- =============================================
+
 CREATE TABLE peminjaman (
     id INT PRIMARY KEY AUTO_INCREMENT,
     alat_id INT,
@@ -45,30 +46,29 @@ CREATE TABLE peminjaman (
 -- =============================================
 -- SAMPLE DATA: alat_olahraga
 -- =============================================
+
 INSERT INTO alat_olahraga (nama_alat, stok) VALUES 
-('Bola Basket', 5),
-('Bola Voli', 3),
-('Bola Sepak', 4),
-('Raket Badminton', 8),
-('Matras Senam', 2),
-('Tali Skipping', 10);
+('Bola Futsal', 6),
+('Bola volly', 9),
+('Bola Basket', 4),
+('Lempar Lembing', 10);
 
 -- =============================================
 -- SAMPLE DATA: peminjam
 -- =============================================
+
 INSERT INTO peminjam (nama_peminjam, kelas) VALUES 
-('Ahmad Rizki', '9A'),
-('Siti Nurhaliza', '9B'),
-('Budi Santoso', '9C'),
-('Dewi Lestari', '8A'),
-('Rudi Hermawan', '8B');
+('Rafandra Pramudya Alfarise', '11 PPLG'),
+('Moch David Anggara', '11 AK 1'),
+('Zaky Daffa', '11 PPLG');
 
 -- =============================================
 -- SAMPLE DATA: peminjaman (opsional)
 -- =============================================
+
 INSERT INTO peminjaman (alat_id, peminjam_id, nama_peminjam, kelas_peminjam, tanggal_pinjam, status) VALUES 
-(1, 1, 'Ahmad Rizki', '9A', '2024-01-20', 'Aktif'),
-(2, 2, 'Siti Nurhaliza', '9B', '2024-01-21', 'Aktif');
+(1, 1, 'Rafandra Pramudya Alafarisie', '11 PPLG', '2025-11-25', 'Aktif'),
+(2, 2, 'Zaky Daffa', '11 PPLG', '2025-11-25', 'Aktif');
 
 -- =============================================
 -- QUERY CONTOH
@@ -87,6 +87,7 @@ SELECT
 FROM alat_olahraga;
 
 -- Cek peminjaman aktif
+
 SELECT 
     p.tanggal_pinjam,
     a.nama_alat,
