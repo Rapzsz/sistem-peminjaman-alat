@@ -10,7 +10,7 @@ function hitungDurasi($tanggal_pinjam, $tanggal_kembali) {
     
     // Validasi: tanggal kembali tidak boleh sebelum tanggal pinjam
     if ($end < $start) {
-        return -1; // tanda error
+        return -1; 
     }
     
     $diff = $start->diff($end);

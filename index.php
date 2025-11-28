@@ -13,7 +13,7 @@
             <p class="lead">SMK AK Nusa Bangsa</p>
         </header>
 
-        <!-- Tombol Aksi -->
+        <!-- Tombol nacigasi -->
         <div class="row mb-4">
             <div class="col-md-3 mb-2">
                 <a href="tambah_alat.php" class="btn btn-success w-100">Tambah Alat</a>

@@ -10,6 +10,7 @@ USE db_peminjaman;
 -- =============================================
 -- TABEL: alat_olahraga
 -- =============================================
+
 CREATE TABLE alat_olahraga (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nama_alat VARCHAR(100) NOT NULL,
@@ -20,6 +21,7 @@ CREATE TABLE alat_olahraga (
 -- =============================================
 -- TABEL: peminjam  
 -- =============================================
+
 CREATE TABLE peminjam (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nama_peminjam VARCHAR(100) NOT NULL,
@@ -50,7 +52,7 @@ INSERT INTO alat_olahraga (nama_alat, stok) VALUES
 ('Bola Futsal', 6),
 ('Bola volly', 9),
 ('Bola Basket', 4),
-('Lempar Lembing', 10);
+('Lempar Lembing', 10); 
 
 -- =============================================
 -- SAMPLE DATA: peminjam
@@ -62,7 +64,7 @@ INSERT INTO peminjam (nama_peminjam, kelas) VALUES
 ('Zaky Daffa', '11 PPLG');
 
 -- =============================================
--- SAMPLE DATA: peminjaman (opsional)
+-- SAMPLE DATA: peminjaman 
 -- =============================================
 
 INSERT INTO peminjaman (alat_id, peminjam_id, nama_peminjam, kelas_peminjam, tanggal_pinjam, status) VALUES 
